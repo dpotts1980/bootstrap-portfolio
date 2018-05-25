@@ -76,41 +76,35 @@
 
 <body>
   <section>
-    <div id="container">        
+    <div class="container-fluid">  
+      <div class="row">     
+          <div class="col-sm-3">
     <h1>Contact</h1>
-        <form action id="contact-form">
-            <div class="inputs">
-                 <label for="fname">Name</label>
-              <div>
-                 <input type="text" id="name" name="firstname" placeholder="Your name..">
-              </div>
-                
-            </div>
+       
+    
+    <div class="form-group"> <!-- Name field !-->
+      <label for="name_id" class="control-label">Name</label>
+      <input type="name" class="form-control" id="name" name="first_last" placeholder="John Smith">
+    </div>
 
-            <div class="inputs">
-                  <label for="lname">Email</label>
-                <div>
-                  <input type="text" id="mail" name="lastname" placeholder="Your email..">
+            <form>
+                <div class="form-group"> <!-- Email field !-->
+                  <label for="email_id" class="control-label">Email</label>
+                  <input type="email" class="form-control" id="email_id" name="email_name" placeholder="name@domain.com">
                 </div>
                 
-             </div>   
-             
-             <div class="inputs">
-                   <label for="message">Message</label>
-                <div>
-                   <textarea id="subject" name="subject" placeholder="Write something.." style="width:400px;height:200px; "></textarea>
-                </div>
-                
-            </div>
+                <form>
+                    <div class="form-group"> <!-- Message input !-->
+                      <label class="control-label " for="message_id">Message</label>
+                      <textarea class="form-control" id="message_id" name="message" rows="5"></textarea>
+                    </div>
+                    
+                <div class="form-group"> <!-- Submit button !-->
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>	
+              </form>
                    
-             <div class="inputs">
-                    <input type="submit" value="Submit">
-            </div>
-                  
-              
-            </form>
-              
-
+            </div>     
         </div>
     <footer>
         copyright ©
