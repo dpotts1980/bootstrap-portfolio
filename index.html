@@ -1,62 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--Heading inluding name and links to other pages-->
-<head id= "heading">
+<head>
+  <title>About Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
- 
-</head>
-<body>
- <title></title>
-   <div class="links">
+  <style>
+      /* Remove the navbar's default margin-bottom and rounded borders */ 
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      .row.content {height: 450px}
+      
+      /* Set gray background color and 100% height */
+      .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+      }
+      
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+      }
+      
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {height:auto;} 
+      }
+    </style>
+  </head>
+ <body>
     <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Dan Potts</a>
+        <div class="container-fluid">
+          <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-         
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
         
-        
-          <span class="icon-bar"><a href="index.html">About</span>
-            <span class="icon-bar"><a href="contact.html">Contact</span>
-              <span class="icon-bar"><a href="portfolio.html">Portfolio</span>
-        
-      </div>
-    </nav>  
     
     
     
    </div>
 </head>
 
-
-  <section class=well>
+<body>
+  <section class>
     
          
-        <!--main content-->
-    <div id="container">
-      <div class="jumbotron"></div>  
-            
-      <h1>About Me</h1>
-       <img class= src="assets/images/profilePic.jpg" class="img-rounded" alt="Cinque Terre">
-       <style>
-         .img {
-           width: 30px;
-           height: 30px;
-         }
-       </style>
+        <!--container-->
+    <div class="container">
+        <!--rows-->
+      <div class="row">
+        <!--columns-->
         
+            <h1>About Me</h1>
+            <div class="col-sm-6">
+              <div class="media">
+                <a href="#" class="thumbnail pull-left"></a>
+       <img src="assets/images/profilePic.jpg" alt="Profile Pic"></a>
+       </div>
+      </div>
+       <div class="col-sm-6">
        <p><br> Dan Potts is new to the world of web development but brings a renewed vigor to the work. He has spent the previous 15 years working at the Service Employees International Union working as a labor organizer, representative, and negotiator. Dan will be using his newfound skills to engage union members on a digital platform and is spearheading the union's new initiative in signing up workers on union membership on electronic membership cards. He is also exploring the option of using his development skills in a freelance capacity, helping individuals and and organizations reach their goals.  
        </p>
-       <style type="text/css">
-        p { background: white !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-     </style>
-     
+      </div>
+    
     </div>
+  </div>
   </section>
         <!--footer section-->
-        <div class="container-fluid"
+        <div class="container"
   <footer>
         copyright ©
   </footer>
